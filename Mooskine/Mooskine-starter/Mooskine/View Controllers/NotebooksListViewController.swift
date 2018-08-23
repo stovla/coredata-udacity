@@ -26,7 +26,10 @@ class NotebooksListViewController: UIViewController, UITableViewDataSource {
         // using NSFetchedResultsController sortDescriptors are mandatory
         fetchRequest.sortDescriptors = [sortDescriptor]
         
-        fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: dataController.viewContext, sectionNameKeyPath: nil, cacheName: nil)
+        // use if you change fetch request and fetch controller
+        // NSFetchedResultsController<Notebook>.deleteCache(withName: "notebooks")
+        
+        fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: dataController.viewContext, sectionNameKeyPath: nil, cacheName: "notebooks")
         fetchedResultsController.delegate = self
         
         do {
