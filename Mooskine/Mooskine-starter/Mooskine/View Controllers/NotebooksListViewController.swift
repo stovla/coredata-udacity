@@ -43,16 +43,11 @@ class NotebooksListViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         navigationItem.titleView = UIImageView(image: #imageLiteral(resourceName: "toolbar-cow"))
         navigationItem.rightBarButtonItem = editButtonItem
-        
-        setupFetchResultsController()
-        
-//        reloadNotebooks() // not needed if using NSFetchedResultsController
-        
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
+        setupFetchResultsController()
         if let indexPath = tableView.indexPathForSelectedRow {
             tableView.deselectRow(at: indexPath, animated: false)
             tableView.reloadRows(at: [indexPath], with: .fade)
