@@ -27,6 +27,7 @@
 		ACD08E26210EF86000D64D02 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD08E25210EF86000D64D02 /* DataController.swift */; };
 		FBC7C93B212CA3F40095CAB1 /* Notebook+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC7C93A212CA3F40095CAB1 /* Notebook+Extensions.swift */; };
 		FBC7C93D212CA4700095CAB1 /* Note+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC7C93C212CA4700095CAB1 /* Note+Extensions.swift */; };
+		FBDD25232130B2AD0052601C /* Pathifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDD25222130B2AD0052601C /* Pathifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		ACD08E25210EF86000D64D02 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		FBC7C93A212CA3F40095CAB1 /* Notebook+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notebook+Extensions.swift"; sourceTree = "<group>"; };
 		FBC7C93C212CA4700095CAB1 /* Note+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+Extensions.swift"; sourceTree = "<group>"; };
+		FBDD25222130B2AD0052601C /* Pathifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pathifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				ACA70AD921300BEE000C9C14 /* UpdateToAttributedStringsPolicy.swift */,
 				ACA70AD721300B83000C9C14 /* UpdateToAttributedStrings.xcmappingmodel */,
 				ACD08E25210EF86000D64D02 /* DataController.swift */,
+				FBDD25222130B2AD0052601C /* Pathifier.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				ACD08E26210EF86000D64D02 /* DataController.swift in Sources */,
 				03B2699C1F2F8AA100C7433C /* NoteDetailsViewController.swift in Sources */,
 				FBC7C93D212CA4700095CAB1 /* Note+Extensions.swift in Sources */,
+				FBDD25232130B2AD0052601C /* Pathifier.swift in Sources */,
 				03B269A01F2F8AAD00C7433C /* Cell.swift in Sources */,
 				ACA70ADA21300BEE000C9C14 /* UpdateToAttributedStringsPolicy.swift in Sources */,
 				03B2699D1F2F8AA100C7433C /* NotesListViewController.swift in Sources */,
@@ -479,6 +483,7 @@
 		039B10761EDC5469002EA94F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DN9K63W6YB;
 				INFOPLIST_FILE = Mooskine/Info.plist;
@@ -493,6 +498,7 @@
 		039B10771EDC5469002EA94F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DN9K63W6YB;
 				INFOPLIST_FILE = Mooskine/Info.plist;
