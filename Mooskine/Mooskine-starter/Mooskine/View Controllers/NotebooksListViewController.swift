@@ -106,7 +106,7 @@ class NotebooksListViewController: UIViewController, UITableViewDataSource {
         let notebook = Notebook(context: dataController.viewContext)
         notebook.name = name
         notebook.creationDate = Date()
-        try? dataController.viewContext.save()
+        dataController.saveViewContext(withContext: dataController.viewContext)
         
 //        reloadNotebooks() // not needed if using NSFetchedResultsController
     }
@@ -127,7 +127,7 @@ class NotebooksListViewController: UIViewController, UITableViewDataSource {
     func deleteNotebook(at indexPath: IndexPath) {
         let notebookToDelete = fetchedResultsController.object(at: indexPath)
         dataController.viewContext.delete(notebookToDelete)
-        try? dataController.viewContext.save()
+        dataController.saveViewContext(withContext: dataController.viewContext)
     }
 
     func updateEditButtonState() {

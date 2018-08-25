@@ -66,8 +66,8 @@ internal struct Pathifier {
         path.stroke()
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
-        return image!
+        guard let newImage = image else { return UIImage() }
+        return newImage
         
     }
     

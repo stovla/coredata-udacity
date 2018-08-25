@@ -89,7 +89,7 @@ class NotesListViewController: UIViewController, UITableViewDataSource {
         note.attributedText = NSAttributedString(string: "New Note")
         note.creationDate = Date()
         note.notebook = notebook
-        try? dataController.viewContext.save()
+        dataController.saveViewContext(withContext: dataController.viewContext)
     }
 
     // Deletes the `Note` at the specified index path
@@ -97,8 +97,7 @@ class NotesListViewController: UIViewController, UITableViewDataSource {
 //        TODO: remove note
         let noteToDelete = fetchedResultsController.object(at: indexPath)
         dataController.viewContext.delete(noteToDelete)
-        try? dataController.viewContext.save()
-        
+        dataController.saveViewContext(withContext: dataController.viewContext)
     }
 
     func updateEditButtonState() {
