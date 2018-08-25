@@ -163,11 +163,6 @@ extension NoteDetailsViewController {
             backgroundNote.attributedText = newText
             try? backgroundContext.save()
         }
-        
-//        textView.attributedText = newText
-//        textView.selectedRange = NSMakeRange(selectedRange.location, 1)
-//        note.attributedText = textView.attributedText
-//        try? dataController.viewContext.save()
     }
     
     // MARK: Helper methods for actions

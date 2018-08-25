@@ -67,8 +67,7 @@ class NotesListViewController: UIViewController, UITableViewDataSource {
         }
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
+    deinit {
         fetchedResultsController = nil
     }
 
